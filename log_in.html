@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDSEPYt14HIDrhS8JwGuExvvqTeZWIq_dc",
+      authDomain: "fir-homework-de864.firebaseapp.com",
+      databaseURL: "https://fir-homework-de864.firebaseio.com",
+      projectId: "fir-homework-de864",
+      storageBucket: "fir-homework-de864.appspot.com",
+      messagingSenderId: "356801933255"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <link rel="stylesheet" href="css/material.min.css">
+  <script src="js/material.min.js"></script>
+
+  <script src="js/jquery.js"></script>
+
+  <script src="js/login.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Chatroom</title>
+</head>
+
+<body>
+  <div class="mdl-card mdl-shadow--2dp">
+    <div class="mdl-card__title mdl-color--light-blue-600 mdl-color-text--white">
+      <h2 class="mdl-card__title-text">Sign In/Up</h2>
+    </div>
+
+    <div class="mdl-card__supporting-text">
+      <h4>Email</h4>
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="email">
+          <label class="mdl-textfield__label" for="sample1">Ex:qqq123@gmail.com</label>
+        </div>
+      </form>
+
+      <h4>Password</h4>
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="password" id="password">
+          <label class="mdl-textfield__label" for="sample1">Text...</label>
+        </div>
+      </form>
+      <h5>if already have account press sign in</h5>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="btnSignIn">
+        Sign in
+      </button>
+      <button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="btnSignUp">
+        Sign Up
+      </button>
+
+      <div class="mdl-card__supporting-text" id="sign-info"></div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
